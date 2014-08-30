@@ -1,0 +1,6 @@
+*.b\#*
+*.s\#*
+*.l\#*
+*.pro
+.DS_Store
+eagle.epf
