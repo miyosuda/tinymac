@@ -1539,6 +1539,16 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <pinref part="U$3" gate="G$1" pin="+3.3V"/>
 <wire x1="35.56" y1="152.4" x2="35.56" y2="162.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="AVIN"/>
+<wire x1="154.94" y1="114.3" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="116.84" x2="148.082" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="148.082" y1="116.84" x2="101.6" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="116.84" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="+3.3V"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<junction x="148.082" y="116.84"/>
+</segment>
 </net>
 <net name="VBUS" class="0">
 <segment>
@@ -1625,18 +1635,6 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <wire x1="154.94" y1="144.78" x2="154.94" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="157.48" x2="182.88" y2="157.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="+3.3V_TGT" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="AVIN"/>
-<wire x1="154.94" y1="114.3" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="116.84" x2="148.082" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="148.082" y1="116.84" x2="101.6" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="116.84" x2="101.6" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="+3.3V"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<junction x="148.082" y="116.84"/>
 </segment>
 </net>
 <net name="N$1" class="0">
