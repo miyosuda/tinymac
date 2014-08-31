@@ -958,6 +958,27 @@ type 0207, grid 7.5 mm</description>
 <rectangle x1="-3.429" y1="-0.3048" x2="-3.175" y2="0.3048" layer="51"/>
 <rectangle x1="3.175" y1="-0.3048" x2="3.429" y2="0.3048" layer="51"/>
 </package>
+<package name="E2,5-5">
+<description>&lt;b&gt;ELECTROLYTIC CAPACITOR&lt;/b&gt;&lt;p&gt;
+grid 2.54 mm, diameter 5 mm</description>
+<wire x1="-1.651" y1="1.27" x2="-1.397" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="1.016" x2="-1.397" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="1.27" x2="-1.143" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="1.27" x2="-1.397" y2="1.524" width="0.1524" layer="21"/>
+<wire x1="-1.651" y1="0" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="0" x2="-0.762" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="-1.27" x2="-0.254" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="-1.27" x2="-0.254" y2="1.27" width="0.1524" layer="51"/>
+<wire x1="-0.254" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="51"/>
+<wire x1="-0.762" y1="1.27" x2="-0.762" y2="0" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="0" x2="1.651" y2="0" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
+<pad name="-" x="1.27" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="+" x="-1.27" y="0" drill="0.8128" diameter="1.6002"/>
+<text x="2.413" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="2.413" y="-2.413" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.254" y1="-1.27" x2="0.762" y2="1.27" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PKM13EPYH4000">
@@ -1064,6 +1085,18 @@ DIP28Pin</description>
 <text x="-1.27" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="CPOL">
+<wire x1="-1.524" y1="-0.889" x2="1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-0.889" x2="1.524" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-0.889" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="0" x2="1.524" y2="0" width="0.254" layer="94"/>
+<text x="1.143" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.5842" y="0.4064" size="1.27" layer="94" rot="R90">+</text>
+<text x="1.143" y="-4.5974" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-2.54" x2="1.651" y2="-1.651" layer="94"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1226,6 +1259,23 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CPOL-EU" prefix="C" uservalue="yes">
+<description>&lt;B&gt;POLARIZED CAPACITOR&lt;/B&gt;, European symbol</description>
+<gates>
+<gate name="G$1" symbol="CPOL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="E2.5-5" package="E2,5-5">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="tinymac2">
@@ -1289,7 +1339,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <part name="J1" library="macklock" deviceset="ZX62-B-5PA" device=""/>
 <part name="T1" library="tinymac" deviceset="TA48M033F" device=""/>
 <part name="C1" library="tinymac" deviceset="CAPACITOR" device="50" value="0.1uF"/>
-<part name="C2" library="maclock" deviceset="CAPACITOR" device="50" value="47uF"/>
+<part name="C2" library="tinymac" deviceset="CPOL-EU" device="E2.5-5" value="47uF"/>
 <part name="GND1" library="maclock" deviceset="GND" device=""/>
 <part name="GND2" library="maclock" deviceset="GND" device=""/>
 <part name="GND3" library="maclock" deviceset="GND" device=""/>
@@ -1305,7 +1355,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <part name="R3" library="tinymac" deviceset="REGISTOR" device="2V" value="4.3K"/>
 <part name="R4" library="tinymac" deviceset="REGISTOR" device="2V" value="8.2K"/>
 <part name="R5" library="tinymac" deviceset="REGISTOR" device="2V" value="24K"/>
-<part name="C5" library="maclock" deviceset="CAPACITOR" device="50" value="0.1uF"/>
+<part name="C4" library="maclock" deviceset="CAPACITOR" device="50" value="0.1uF"/>
 <part name="U$4" library="tinymac" deviceset="+3.3V" device=""/>
 <part name="GND5" library="maclock" deviceset="GND" device=""/>
 <part name="LED" library="tinymac2" deviceset="HOLE_PAD" device=""/>
@@ -1353,7 +1403,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <instance part="R3" gate="G$1" x="35.56" y="119.38" rot="R90"/>
 <instance part="R4" gate="G$1" x="35.56" y="109.22" rot="R90"/>
 <instance part="R5" gate="G$1" x="35.56" y="99.06" rot="R90"/>
-<instance part="C5" gate="G$1" x="224.282" y="114.3"/>
+<instance part="C4" gate="G$1" x="224.282" y="114.3"/>
 <instance part="U$4" gate="G$1" x="241.3" y="124.46"/>
 <instance part="GND5" gate="1" x="241.3" y="86.36"/>
 <instance part="LED" gate="1" x="88.9" y="165.1"/>
@@ -1402,7 +1452,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 </segment>
 <segment>
 <wire x1="93.98" y1="12.7" x2="93.98" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C2" gate="G$1" pin="-"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -1446,7 +1496,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <wire x1="241.3" y1="109.22" x2="246.38" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="86.36" x2="241.3" y2="109.22" width="0.1524" layer="91"/>
 <junction x="241.3" y="109.22"/>
-<pinref part="C5" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <junction x="224.282" y="109.22"/>
 <wire x1="220.98" y1="109.22" x2="220.98" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="GND"/>
@@ -1501,7 +1551,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <net name="+3.3V" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="+3.3V"/>
-<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="93.98" y1="30.48" x2="101.6" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="25.4" x2="93.98" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="T1" gate="G$1" pin="OUT"/>
@@ -1529,7 +1579,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <wire x1="248.92" y1="48.26" x2="228.6" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="116.84" x2="248.92" y2="116.84" width="0.1524" layer="91"/>
 <junction x="241.3" y="116.84"/>
-<pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <junction x="224.282" y="116.84"/>
 <pinref part="IC1" gate="G$1" pin="VIN"/>
 <wire x1="218.44" y1="109.22" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
