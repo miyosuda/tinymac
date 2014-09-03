@@ -1250,7 +1250,13 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
+<class number="0" name="default" width="0.254" drill="0">
+</class>
+<class number="1" name="5V" width="0.4064" drill="0">
+</class>
+<class number="2" name="3.3V" width="0.4064" drill="0">
+</class>
+<class number="3" name="GND" width="0.4064" drill="0">
 </class>
 </classes>
 <parts>
@@ -1348,7 +1354,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="3">
 <segment>
 <wire x1="33.02" y1="45.72" x2="35.56" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="45.72" x2="40.64" y2="45.72" width="0.1524" layer="91"/>
@@ -1468,7 +1474,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <wire x1="205.74" y1="144.78" x2="208.28" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3.3V" class="0">
+<net name="+3.3V" class="2">
 <segment>
 <pinref part="U$2" gate="G$1" pin="+3.3V"/>
 <pinref part="C2" gate="G$1" pin="+"/>
@@ -1520,7 +1526,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <junction x="148.082" y="116.84"/>
 </segment>
 </net>
-<net name="VBUS" class="0">
+<net name="VBUS" class="1">
 <segment>
 <wire x1="53.34" y1="25.4" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
