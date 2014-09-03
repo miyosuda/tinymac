@@ -1572,7 +1572,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <wire x1="35.56" y1="93.98" x2="35.56" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="N$19" class="2">
 <segment>
 <pinref part="LED" gate="1" pin="P"/>
 <wire x1="109.22" y1="165.1" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
