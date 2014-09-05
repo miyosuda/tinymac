@@ -1306,6 +1306,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <sheets>
 <sheet>
 <plain>
+<text x="78.74" y="170.18" size="1.778" layer="97">Nokia 5110 LCD</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="180.34" y="114.3"/>
