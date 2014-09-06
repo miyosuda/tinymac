@@ -2,6 +2,9 @@
 *.s\#*
 *.l\#*
 *.pro
+*.zip
+*.log
 .DS_Store
 eagle.epf
 eup
+
