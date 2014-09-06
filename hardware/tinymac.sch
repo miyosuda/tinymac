@@ -1433,7 +1433,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <junction x="231.14" y="109.22"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="SW_INPUT" class="0">
 <segment>
 <wire x1="35.56" y1="134.62" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="P$1"/>
@@ -1445,21 +1445,21 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <junction x="35.56" y="139.7"/>
 <pinref part="IC1" gate="G$1" pin="DP9/AN"/>
 <wire x1="154.94" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="104.14" x2="63.5" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="106.68" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="139.7" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="139.7" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
+<label x="139.7" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="MOSI" class="0">
 <segment>
 <wire x1="147.32" y1="154.94" x2="91.44" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="MOSI" gate="1" pin="P"/>
 <wire x1="147.32" y1="139.7" x2="147.32" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="DP2/MOSI_SPI/PWM"/>
 <wire x1="147.32" y1="139.7" x2="154.94" y2="139.7" width="0.1524" layer="91"/>
+<label x="147.32" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SCLK" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DP6/SCK_SPI"/>
 <wire x1="154.94" y1="119.38" x2="109.22" y2="119.38" width="0.1524" layer="91"/>
@@ -1467,6 +1467,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <wire x1="109.22" y1="160.02" x2="91.44" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="SCLK" gate="1" pin="P"/>
 <wire x1="91.44" y1="160.02" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
+<label x="142.24" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -1580,31 +1581,34 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="DC" class="0">
 <segment>
 <pinref part="DC" gate="1" pin="P"/>
 <wire x1="91.44" y1="149.86" x2="142.24" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="149.86" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="DP4/AN"/>
 <wire x1="142.24" y1="129.54" x2="154.94" y2="129.54" width="0.1524" layer="91"/>
+<label x="142.24" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="RST" class="0">
 <segment>
 <pinref part="RST" gate="1" pin="P"/>
 <wire x1="91.44" y1="144.78" x2="137.16" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="144.78" x2="137.16" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="DP10/AN"/>
 <wire x1="137.16" y1="99.06" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
+<label x="139.7" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="SCE" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="DP11/AN"/>
 <wire x1="154.94" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="93.98" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="SCE" gate="1" pin="P"/>
 <wire x1="132.08" y1="139.7" x2="91.44" y2="139.7" width="0.1524" layer="91"/>
+<label x="139.7" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$13" class="0">

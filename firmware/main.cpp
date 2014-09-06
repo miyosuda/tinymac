@@ -35,7 +35,6 @@ public:
 		triggeredValue(-1),
 		phase(NO_INPUT) {
 	}
-
 	
 	/**
 	 * called priodically from interrupt.
@@ -84,7 +83,7 @@ public:
 	}
 };
 
-static SwitchManager switchManager(dp13);
+static SwitchManager switchManager(dp9);
 
 /**
  * <!--  clockHandler():  -->
@@ -123,15 +122,14 @@ static void processSwitch(int switchValue) {
  */
 int main() {
 	LcdSetting setting;
-	setting.sce  = dp17;
-	setting.rst  = dp16;
-	setting.dc   = dp15;
+	setting.sce  = dp11;
+	setting.rst  = dp10;
+	setting.dc   = dp4;
 	setting.mosi = dp2;
 	setting.sclk = dp6;
 	
 	application.init(setting);
-
-	//clockTimer.attach( &clockHandler, 1.0 ); // 1sec
+	
 	clockTimer.attach( &clockHandler, 0.1 ); // 1sec
 	switchTimer.attach( &switchManager, &SwitchManager::check, 0.01 ); // 10msec
 	

@@ -776,7 +776,7 @@ design rules under a new name.</description>
 <wire x1="20.2184" y1="37.4904" x2="20.264" y2="37.2" width="0.4064" layer="1"/>
 <wire x1="20.2184" y1="39.7256" x2="20.364" y2="39.875" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$15">
+<signal name="SW_INPUT">
 <contactref element="SW1" pad="2-A"/>
 <contactref element="SW1" pad="1-A"/>
 <contactref element="R1" pad="1"/>
@@ -802,7 +802,7 @@ design rules under a new name.</description>
 <wire x1="33.02" y1="21.0312" x2="33.12" y2="21.02" width="0.254" layer="1"/>
 <wire x1="24.9936" y1="11.8872" x2="24.9936" y2="11.7856" width="0.254" layer="1"/>
 </signal>
-<signal name="N$4">
+<signal name="MOSI">
 <contactref element="MOSI" pad="1"/>
 <contactref element="IC1" pad="2"/>
 <wire x1="5.588" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="1"/>
@@ -813,7 +813,7 @@ design rules under a new name.</description>
 <wire x1="17.4752" y1="2.54" x2="16.5608" y2="3.4544" width="0.254" layer="1"/>
 <wire x1="17.4752" y1="2.54" x2="17.526" y2="2.54" width="0.254" layer="1"/>
 </signal>
-<signal name="N$5">
+<signal name="SCLK">
 <contactref element="IC1" pad="6"/>
 <contactref element="SCLK" pad="1"/>
 <wire x1="15.24" y1="2.7432" x2="15.24" y2="10.16" width="0.254" layer="1"/>
@@ -992,7 +992,7 @@ design rules under a new name.</description>
 <wire x1="9.9568" y1="5.2832" x2="9.906" y2="5.334" width="0.4064" layer="1"/>
 <wire x1="12.3952" y1="2.54" x2="12.446" y2="2.54" width="0.4064" layer="1"/>
 </signal>
-<signal name="N$9">
+<signal name="DC">
 <contactref element="DC" pad="1"/>
 <contactref element="IC1" pad="4"/>
 <wire x1="10.16" y1="9.0424" x2="10.16" y2="10.16" width="0.254" layer="1"/>
@@ -1005,14 +1005,14 @@ design rules under a new name.</description>
 <wire x1="20.0152" y1="2.54" x2="18.8976" y2="1.4224" width="0.254" layer="1"/>
 <wire x1="20.0152" y1="2.54" x2="20.066" y2="2.54" width="0.254" layer="1"/>
 </signal>
-<signal name="N$10">
+<signal name="RST">
 <contactref element="RST" pad="1"/>
 <contactref element="IC1" pad="10"/>
 <wire x1="25.4" y1="5.2832" x2="25.4" y2="10.16" width="0.254" layer="1"/>
 <wire x1="22.6568" y1="2.54" x2="25.4" y2="5.2832" width="0.254" layer="1"/>
 <wire x1="22.6568" y1="2.54" x2="22.606" y2="2.54" width="0.254" layer="1"/>
 </signal>
-<signal name="N$12">
+<signal name="SCE">
 <contactref element="IC1" pad="11"/>
 <contactref element="SCE" pad="1"/>
 <wire x1="27.94" y1="5.2832" x2="27.94" y2="10.16" width="0.254" layer="1"/>
