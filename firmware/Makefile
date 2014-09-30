@@ -84,3 +84,9 @@ srcpack:
 			*.cpp *.h \
             Makefile
 	gzip packed/$(PROJECT).src.tar
+
+write: all
+	~/bin/lpc21isp -bin $(PROJECT).bin /dev/cu.usbserial-AH016S2K 115200 48000
+
+
+

@@ -20,6 +20,8 @@ void NormalMode::reset() {
 	lastDrawnTime = -1;
 }
 
+//static int unsigned count = 0;
+
 /**
  * <!--  draw():  -->
  */
@@ -29,6 +31,16 @@ void NormalMode::draw(int time) {
 	}
 
 	lcd->clear();
+	/*
+	if( (count / 50) % 20 == 0 ) {
+		// blinking eye
+		lcd->drawImage( face1ImageInfo, face1ImageData );
+	} else {
+		lcd->drawImage( face0ImageInfo, face0ImageData );
+	}
+	count++;
+	*/
+	
 	lcd->drawImage( smileImageInfo, smileImageData );
 	lcd->drawImage( balloonImageInfo, balloonImageData );
 	//lcd->drawString("Hello!", 42, 20);
