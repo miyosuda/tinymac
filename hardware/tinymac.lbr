@@ -1813,7 +1813,8 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LPC1114FBD48/301" prefix="U">
+<deviceset name="LPC11U35FBD48/401" prefix="U">
+<description>LPC11U35</description>
 <gates>
 <gate name="A" symbol="SOT313-2" x="0" y="0"/>
 </gates>
@@ -1871,7 +1872,7 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESCRIPTION" value="MCU 32Bit ARM Cortex M0 32KB Flash 3.3V" constant="no"/>
+<attribute name="DESCRIPTION" value="MCU 32Bit ARM Cortex M0 64KB Flash 3.3V" constant="no"/>
 <attribute name="FAMILY" value="Unknown" constant="no"/>
 <attribute name="MANUFACTURER_NAME" value="NXP" constant="no"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="LPC11U35FBD48/401" constant="no"/>
