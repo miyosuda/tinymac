@@ -1492,54 +1492,54 @@ SMD type&lt;br&gt;</description>
 <text x="-3.81" y="11.176" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="SOT313-2">
-<pin name="PIO2_6" x="0" y="0" length="middle" direction="pas"/>
-<pin name="PIO2_0/*DTR/SSEL1" x="0" y="-2.54" length="middle" direction="pas"/>
-<pin name="*RESET/PIO0_0" x="0" y="-5.08" length="middle" direction="pas"/>
-<pin name="PIO0_1/CLKOUT/CT32B0_MAT2" x="0" y="-7.62" length="middle" direction="pas"/>
+<pin name="PIO1_25/CT32B0_MAT1" x="0" y="0" length="middle" direction="pas"/>
+<pin name="PIO1_19/!DTR!/SSEL1" x="0" y="-2.54" length="middle" direction="pas"/>
+<pin name="!RESET!/PIO0_0" x="0" y="-5.08" length="middle" direction="pas"/>
+<pin name="PIO0_1/CLKOUT/CT32B0_MAT2/USB_FTOGGLE" x="0" y="-7.62" length="middle" direction="pas"/>
 <pin name="VSS_2" x="0" y="-10.16" length="middle" direction="pas"/>
 <pin name="XTALIN" x="0" y="-12.7" length="middle" direction="pas"/>
 <pin name="XTALOUT" x="0" y="-15.24" length="middle" direction="pas"/>
 <pin name="VDD_2" x="0" y="-17.78" length="middle" direction="pas"/>
-<pin name="PIO1_8/CT16B1_CAP0" x="0" y="-20.32" length="middle" direction="pas"/>
+<pin name="PIO0_20/CT16B1_CAP0" x="0" y="-20.32" length="middle" direction="pas"/>
 <pin name="PIO0_2/SSEL0/CT16B0_CAP0" x="0" y="-22.86" length="middle" direction="pas"/>
-<pin name="PIO2_7" x="0" y="-25.4" length="middle" direction="pas"/>
-<pin name="PIO2_8" x="0" y="-27.94" length="middle" direction="pas"/>
-<pin name="PIO2_1/*DSR/SCK1" x="0" y="-30.48" length="middle" direction="pas"/>
-<pin name="PIO0_3" x="0" y="-33.02" length="middle" direction="pas"/>
+<pin name="PIO1_26/CT32B0_MAT2/RXD" x="0" y="-25.4" length="middle" direction="pas"/>
+<pin name="PIO1_27/CT32B0_MAT3/TXD" x="0" y="-27.94" length="middle" direction="pas"/>
+<pin name="PIO1_20/!DSR!/SCK1" x="0" y="-30.48" length="middle" direction="pas"/>
+<pin name="PIO0_3/USB_VBUS" x="0" y="-33.02" length="middle" direction="pas"/>
 <pin name="PIO0_4/SCL" x="0" y="-35.56" length="middle" direction="pas"/>
 <pin name="PIO0_5/SDA" x="0" y="-38.1" length="middle" direction="pas"/>
-<pin name="PIO1_9/CT16B1_MAT0" x="0" y="-40.64" length="middle" direction="pas"/>
-<pin name="PIO3_4" x="0" y="-43.18" length="middle" direction="pas"/>
-<pin name="PIO2_4" x="0" y="-45.72" length="middle" direction="pas"/>
-<pin name="PIO2_5" x="0" y="-48.26" length="middle" direction="pas"/>
-<pin name="PIO3_5" x="0" y="-50.8" length="middle" direction="pas"/>
-<pin name="PIO0_6/SCK0" x="0" y="-53.34" length="middle" direction="pas"/>
-<pin name="PIO0_7/*CTS" x="0" y="-55.88" length="middle" direction="pas"/>
-<pin name="PIO2_9" x="0" y="-58.42" length="middle" direction="pas"/>
-<pin name="PIO2_10" x="162.56" y="-58.42" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO2_2/*DCD/MISO1" x="162.56" y="-55.88" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO0_21/CT16B1_MAT0/MOSI1" x="0" y="-40.64" length="middle" direction="pas"/>
+<pin name="PIO1_23/CT16B1_MAT1/SSEL1" x="0" y="-43.18" length="middle" direction="pas"/>
+<pin name="USB_DM" x="0" y="-45.72" length="middle" direction="pas"/>
+<pin name="USB_DP" x="0" y="-48.26" length="middle" direction="pas"/>
+<pin name="PIO1_24/CT32B0_MAT0" x="0" y="-50.8" length="middle" direction="pas"/>
+<pin name="PIO0_6/!USB_CONNECT!/SCK0" x="0" y="-53.34" length="middle" direction="pas"/>
+<pin name="PIO0_7/!CTS!" x="0" y="-55.88" length="middle" direction="pas"/>
+<pin name="PIO1_28/CT32B0_CAP0/SCLK" x="0" y="-58.42" length="middle" direction="pas"/>
+<pin name="PIO1_31" x="162.56" y="-58.42" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO1_21/!DCD!/MISO1" x="162.56" y="-55.88" length="middle" direction="pas" rot="R180"/>
 <pin name="PIO0_8/MISO0/CT16B0_MAT0" x="162.56" y="-53.34" length="middle" direction="pas" rot="R180"/>
 <pin name="PIO0_9/MOSI0/CT16B0_MAT1" x="162.56" y="-50.8" length="middle" direction="pas" rot="R180"/>
 <pin name="SWCLK/PIO0_10/SCK0/CT16B0_MAT2" x="162.56" y="-48.26" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO1_10/AD6/CT16B1_MAT1" x="162.56" y="-45.72" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO2_11/SCK0" x="162.56" y="-43.18" length="middle" direction="pas" rot="R180"/>
-<pin name="R/PIO0_11/AD0/CT32B0_MAT3" x="162.56" y="-40.64" length="middle" direction="pas" rot="R180"/>
-<pin name="R/PIO1_0/AD1/CT32B1_CAP0" x="162.56" y="-38.1" length="middle" direction="pas" rot="R180"/>
-<pin name="R/PIO1_1/AD2/CT32B1_MAT0" x="162.56" y="-35.56" length="middle" direction="pas" rot="R180"/>
-<pin name="R/PIO1_2/AD3/CT32B1_MAT1" x="162.56" y="-33.02" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO3_0/*DTR" x="162.56" y="-30.48" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO3_1/*DSR" x="162.56" y="-27.94" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO2_3/*RI/MOSI1" x="162.56" y="-25.4" length="middle" direction="pas" rot="R180"/>
-<pin name="SWDIO/PIO1_3/AD4/CT32B1_MAT2" x="162.56" y="-22.86" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO1_4/AD5/CT32B1_MAT3/WAKEUP" x="162.56" y="-20.32" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO0_22/AD6/CT16B1_MAT1/MISO1" x="162.56" y="-45.72" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO1_29/SCK0/CT32B0_CAP1" x="162.56" y="-43.18" length="middle" direction="pas" rot="R180"/>
+<pin name="TDI/PIO0_11/AD0/CT32B0_MAT3" x="162.56" y="-40.64" length="middle" direction="pas" rot="R180"/>
+<pin name="TMS/PIO0_12/AD1/CT32B1_CAP0" x="162.56" y="-38.1" length="middle" direction="pas" rot="R180"/>
+<pin name="TDO/PIO0_13/AD2/CT32B1_MAT0" x="162.56" y="-35.56" length="middle" direction="pas" rot="R180"/>
+<pin name="!TRST!/PIO0_14/AD3/CT32B1_MAT1" x="162.56" y="-33.02" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO1_13/!DTR!/CT16B0_MAT0/TXD" x="162.56" y="-30.48" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO1_14/!DSR!/CT16B0_MAT1/RXD" x="162.56" y="-27.94" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO1_22/!RI!/MOSI1" x="162.56" y="-25.4" length="middle" direction="pas" rot="R180"/>
+<pin name="SWDIO/PIO0_15/AD4/CT32B1_MAT2" x="162.56" y="-22.86" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO0_16/AD5/CT32B1_MAT3/WAKEUP" x="162.56" y="-20.32" length="middle" direction="pas" rot="R180"/>
 <pin name="VSS" x="162.56" y="-17.78" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO1_11/AD7" x="162.56" y="-15.24" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO3_2/*DCD" x="162.56" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO0_23/AD7" x="162.56" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO1_15/!DCD!/CT16B0_MAT2/SCK1" x="162.56" y="-12.7" length="middle" direction="pas" rot="R180"/>
 <pin name="VDD" x="162.56" y="-10.16" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO1_5/*RTS/CT32B0_CAP0" x="162.56" y="-7.62" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO1_6/RXD/CT32B0_MAT0" x="162.56" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO1_7/TXD/CT32B0_MAT1" x="162.56" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="PIO3_3/*RI" x="162.56" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO0_17/!RTS!/CT32B0_CAP0/SCLK" x="162.56" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO0_18/RXD/CT32B0_MAT0" x="162.56" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO0_19/TXD/CT32B0_MAT1" x="162.56" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="PIO1_16/!RI!/CT16B0_CAP0" x="162.56" y="0" length="middle" direction="pas" rot="R180"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-63.5" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="-63.5" x2="154.94" y2="-63.5" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="-63.5" x2="154.94" y2="5.08" width="0.1524" layer="94"/>
@@ -1820,48 +1820,48 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <devices>
 <device name="" package="SOT313-2">
 <connects>
-<connect gate="A" pin="*RESET/PIO0_0" pad="3"/>
-<connect gate="A" pin="PIO0_1/CLKOUT/CT32B0_MAT2" pad="4"/>
+<connect gate="A" pin="!RESET!/PIO0_0" pad="3"/>
+<connect gate="A" pin="!TRST!/PIO0_14/AD3/CT32B1_MAT1" pad="35"/>
+<connect gate="A" pin="PIO0_1/CLKOUT/CT32B0_MAT2/USB_FTOGGLE" pad="4"/>
+<connect gate="A" pin="PIO0_16/AD5/CT32B1_MAT3/WAKEUP" pad="40"/>
+<connect gate="A" pin="PIO0_17/!RTS!/CT32B0_CAP0/SCLK" pad="45"/>
+<connect gate="A" pin="PIO0_18/RXD/CT32B0_MAT0" pad="46"/>
+<connect gate="A" pin="PIO0_19/TXD/CT32B0_MAT1" pad="47"/>
 <connect gate="A" pin="PIO0_2/SSEL0/CT16B0_CAP0" pad="10"/>
-<connect gate="A" pin="PIO0_3" pad="14"/>
+<connect gate="A" pin="PIO0_20/CT16B1_CAP0" pad="9"/>
+<connect gate="A" pin="PIO0_21/CT16B1_MAT0/MOSI1" pad="17"/>
+<connect gate="A" pin="PIO0_22/AD6/CT16B1_MAT1/MISO1" pad="30"/>
+<connect gate="A" pin="PIO0_23/AD7" pad="42"/>
+<connect gate="A" pin="PIO0_3/USB_VBUS" pad="14"/>
 <connect gate="A" pin="PIO0_4/SCL" pad="15"/>
 <connect gate="A" pin="PIO0_5/SDA" pad="16"/>
-<connect gate="A" pin="PIO0_6/SCK0" pad="22"/>
-<connect gate="A" pin="PIO0_7/*CTS" pad="23"/>
+<connect gate="A" pin="PIO0_6/!USB_CONNECT!/SCK0" pad="22"/>
+<connect gate="A" pin="PIO0_7/!CTS!" pad="23"/>
 <connect gate="A" pin="PIO0_8/MISO0/CT16B0_MAT0" pad="27"/>
 <connect gate="A" pin="PIO0_9/MOSI0/CT16B0_MAT1" pad="28"/>
-<connect gate="A" pin="PIO1_10/AD6/CT16B1_MAT1" pad="30"/>
-<connect gate="A" pin="PIO1_11/AD7" pad="42"/>
-<connect gate="A" pin="PIO1_4/AD5/CT32B1_MAT3/WAKEUP" pad="40"/>
-<connect gate="A" pin="PIO1_5/*RTS/CT32B0_CAP0" pad="45"/>
-<connect gate="A" pin="PIO1_6/RXD/CT32B0_MAT0" pad="46"/>
-<connect gate="A" pin="PIO1_7/TXD/CT32B0_MAT1" pad="47"/>
-<connect gate="A" pin="PIO1_8/CT16B1_CAP0" pad="9"/>
-<connect gate="A" pin="PIO1_9/CT16B1_MAT0" pad="17"/>
-<connect gate="A" pin="PIO2_0/*DTR/SSEL1" pad="2"/>
-<connect gate="A" pin="PIO2_1/*DSR/SCK1" pad="13"/>
-<connect gate="A" pin="PIO2_10" pad="25"/>
-<connect gate="A" pin="PIO2_11/SCK0" pad="31"/>
-<connect gate="A" pin="PIO2_2/*DCD/MISO1" pad="26"/>
-<connect gate="A" pin="PIO2_3/*RI/MOSI1" pad="38"/>
-<connect gate="A" pin="PIO2_4" pad="19"/>
-<connect gate="A" pin="PIO2_5" pad="20"/>
-<connect gate="A" pin="PIO2_6" pad="1"/>
-<connect gate="A" pin="PIO2_7" pad="11"/>
-<connect gate="A" pin="PIO2_8" pad="12"/>
-<connect gate="A" pin="PIO2_9" pad="24"/>
-<connect gate="A" pin="PIO3_0/*DTR" pad="36"/>
-<connect gate="A" pin="PIO3_1/*DSR" pad="37"/>
-<connect gate="A" pin="PIO3_2/*DCD" pad="43"/>
-<connect gate="A" pin="PIO3_3/*RI" pad="48"/>
-<connect gate="A" pin="PIO3_4" pad="18"/>
-<connect gate="A" pin="PIO3_5" pad="21"/>
-<connect gate="A" pin="R/PIO0_11/AD0/CT32B0_MAT3" pad="32"/>
-<connect gate="A" pin="R/PIO1_0/AD1/CT32B1_CAP0" pad="33"/>
-<connect gate="A" pin="R/PIO1_1/AD2/CT32B1_MAT0" pad="34"/>
-<connect gate="A" pin="R/PIO1_2/AD3/CT32B1_MAT1" pad="35"/>
+<connect gate="A" pin="PIO1_13/!DTR!/CT16B0_MAT0/TXD" pad="36"/>
+<connect gate="A" pin="PIO1_14/!DSR!/CT16B0_MAT1/RXD" pad="37"/>
+<connect gate="A" pin="PIO1_15/!DCD!/CT16B0_MAT2/SCK1" pad="43"/>
+<connect gate="A" pin="PIO1_16/!RI!/CT16B0_CAP0" pad="48"/>
+<connect gate="A" pin="PIO1_19/!DTR!/SSEL1" pad="2"/>
+<connect gate="A" pin="PIO1_20/!DSR!/SCK1" pad="13"/>
+<connect gate="A" pin="PIO1_21/!DCD!/MISO1" pad="26"/>
+<connect gate="A" pin="PIO1_22/!RI!/MOSI1" pad="38"/>
+<connect gate="A" pin="PIO1_23/CT16B1_MAT1/SSEL1" pad="18"/>
+<connect gate="A" pin="PIO1_24/CT32B0_MAT0" pad="21"/>
+<connect gate="A" pin="PIO1_25/CT32B0_MAT1" pad="1"/>
+<connect gate="A" pin="PIO1_26/CT32B0_MAT2/RXD" pad="11"/>
+<connect gate="A" pin="PIO1_27/CT32B0_MAT3/TXD" pad="12"/>
+<connect gate="A" pin="PIO1_28/CT32B0_CAP0/SCLK" pad="24"/>
+<connect gate="A" pin="PIO1_29/SCK0/CT32B0_CAP1" pad="31"/>
+<connect gate="A" pin="PIO1_31" pad="25"/>
 <connect gate="A" pin="SWCLK/PIO0_10/SCK0/CT16B0_MAT2" pad="29"/>
-<connect gate="A" pin="SWDIO/PIO1_3/AD4/CT32B1_MAT2" pad="39"/>
+<connect gate="A" pin="SWDIO/PIO0_15/AD4/CT32B1_MAT2" pad="39"/>
+<connect gate="A" pin="TDI/PIO0_11/AD0/CT32B0_MAT3" pad="32"/>
+<connect gate="A" pin="TDO/PIO0_13/AD2/CT32B1_MAT0" pad="34"/>
+<connect gate="A" pin="TMS/PIO0_12/AD1/CT32B1_CAP0" pad="33"/>
+<connect gate="A" pin="USB_DM" pad="19"/>
+<connect gate="A" pin="USB_DP" pad="20"/>
 <connect gate="A" pin="VDD" pad="44"/>
 <connect gate="A" pin="VDD_2" pad="8"/>
 <connect gate="A" pin="VSS" pad="41"/>
@@ -1874,8 +1874,8 @@ http://akizukidenshi.com/catalog/g/gP-04118/</description>
 <attribute name="DESCRIPTION" value="MCU 32Bit ARM Cortex M0 32KB Flash 3.3V" constant="no"/>
 <attribute name="FAMILY" value="Unknown" constant="no"/>
 <attribute name="MANUFACTURER_NAME" value="NXP" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="LPC1114FBD48/301" constant="no"/>
-<attribute name="RSPARTNUMBER" value="7257714" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="LPC11U35FBD48/401" constant="no"/>
+<attribute name="RSPARTNUMBER" value="" constant="no"/>
 <attribute name="SECTION" value="Unknown" constant="no"/>
 <attribute name="VENDOR" value="NXP" constant="no"/>
 </technology>
